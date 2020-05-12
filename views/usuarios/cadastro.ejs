@@ -1,0 +1,28 @@
+<% contentFor('body') %>
+
+<div class="container mt-5">
+
+    <h3>Novo Usuário</h3>
+
+    <form action="/save_user" method="POST">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email"">
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome"">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" name="senha"">
+        </div>
+        
+        
+        <div class="form-group ">
+            <button type="submit" class="btn btn-success">Salvar</button>
+        </div>
+    </form>
+
+
+</div>

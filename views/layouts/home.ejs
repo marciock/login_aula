@@ -1,0 +1,30 @@
+<% contentFor('body') %>
+
+<div class="container mt-5">
+  <div class="row">
+  <div class="col-sm-10">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Login</h5>
+        
+        <form action="/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" name="senha">
+          </div>
+        
+          <div class="float-right">
+            <a href="/cadastro" class="bnt card-link">Novo Cadastro</a>
+            <a href="/editar" class="bnt card-link">Alterar Perfil</a>
+           <button type="submit" class="bnt btn-success card-link">Entrar</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
